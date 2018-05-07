@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get '/get_user', to: 'auth#show'
 
+  post '/signup', to: 'users#create'
+
 end

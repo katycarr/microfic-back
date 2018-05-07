@@ -11,7 +11,6 @@ class ApplicationController < ActionController::API
   end
 
   def decode_token
-    byebug
     JWT.decode(get_token, ENV["SECRET_KEY_BASE"])[0]
   end
 
